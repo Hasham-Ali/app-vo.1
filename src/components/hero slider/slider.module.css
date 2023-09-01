@@ -1,0 +1,27 @@
+.sliderContainer{
+    margin: 0px;
+    padding: 0px;
+    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.arrowPrev{
+    background-color: aqua;
+    font-size: 30px;
+}
+.arrowNext{
+    background-color: aqua;
+    font-size: 30px;
+    margin-left: 50px;
+}

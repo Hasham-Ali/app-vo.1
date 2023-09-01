@@ -1,0 +1,41 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.movies{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.hollywoodContainer{
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+}
+.hollywood{
+    height: 400px;
+    width: 100%;
+    background-image: url("./moviesCat\ imges/hollywood.jpg");
+    background-size: cover;
+}
+.hollywoodDetail{
+    background-color: blueviolet;
+}
+
+
+
+
+.bollywood{
+    height: 400px;
+    width: 400px;
+    background-image: url("./moviesCat\ imges/bollywood.jpg");
+    background-size: cover;
+}
+.lollywood{
+    height: 400px;
+    width: 400px;
+    background-image: url("./moviesCat\ imges/lollywood.jpg");
+    background-size: cover;
+}

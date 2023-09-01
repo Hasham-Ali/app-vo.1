@@ -1,0 +1,8 @@
+.detail{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+}

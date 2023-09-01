@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import Home from './pages/home/home';
+import Movies from './pages/movies/movies';
+import Softwares from './pages/softwares/softwares';
+import Games from './pages/games/games';
 
 function App() {
+
+  var [pageName, setPageName] = useState("Home");
+  var changePageName = (pageName) =>{ setPageName(pageName)};
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header changePageName={changePageName} currentPage={pageName}/>
+
+      {pageName === "Home" && <Home/>}
+      {pageName === "Movies" && <Movies/>}
+      {pageName === "Games" && <Games/>}
+      {pageName === "Softwares" && <Softwares/>}
+
+      
+
+      <Footer/>
     </div>
   );
 }
